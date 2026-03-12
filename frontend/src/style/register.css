@@ -1,0 +1,43 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.register-container{
+  width:350px;
+  margin:120px auto;
+  padding:30px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.register-container h1{
+  margin-bottom:20px;
+}
+
+.register-container input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+.register-container button{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  background:#6366f1;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.register-container button:hover{
+  background:#4f46e5;
+}

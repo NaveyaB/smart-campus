@@ -1,7 +1,17 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import "../style/login.css";
 
 function Login() {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  console.log(formData);
+
+  navigate("/dashboard");   // this moves page
+};
 
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
@@ -20,30 +30,15 @@ function Login() {
   };
 
   return (
+<div className="login-container">
+<h2>Login</h2>
 
-    <div>
-      <h2>Admin Login</h2>
+<input type="email" placeholder="Email" />
+<input type="password" placeholder="Password" />
 
-      <form onSubmit={handleLogin}>
-
-        <input
-        type="email"
-        placeholder="Email"
-        onChange={(e)=>setEmail(e.target.value)}
-        />
-
-        <input
-        type="password"
-        placeholder="Password"
-        onChange={(e)=>setPassword(e.target.value)}
-        />
-
-        <button>Login</button>
-
-      </form>
-
-    </div>
-
+<button>Login</button>
+</div>
+   
   );
 }
 

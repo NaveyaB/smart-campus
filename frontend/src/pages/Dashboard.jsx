@@ -1,24 +1,23 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import "../style/dashboard.css";
 
 function Dashboard(){
 
   return(
 
-    <div>
+     <div className="dashboard">
 
-      <Navbar />
+      <nav className="navbar">
+        <h2>Admin Panel</h2>
+      </nav>
 
-      <div style={{display:"flex"}}>
-        <Sidebar />
-
-        <div style={{padding:"20px"}}>
-          <h1>Dashboard Overview</h1>
-        </div>
-
+      <div className="dashboard">
+        <h1>Welcome to Dashboard</h1>
       </div>
 
-    </div>
+
+      </div>
 
   );
 }

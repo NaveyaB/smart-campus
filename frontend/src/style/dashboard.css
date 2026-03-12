@@ -1,0 +1,36 @@
+.dashboard{
+  padding:40px;
+  font-family:Arial;
+}
+
+.dashboard h1{
+  margin-bottom:30px;
+}
+
+.dashboard-cards{
+  display:flex;
+  gap:20px;
+}
+.navbar{
+  background:#6366f1;
+  color:white;
+  padding:15px;
+  font-size:20px;
+}
+
+.dashboard{
+  padding:40px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  width:200px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+.card h2{
+  margin-bottom:10px;
+}
